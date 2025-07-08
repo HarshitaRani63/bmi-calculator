@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+        <h1>BMI Calculator</h1>
+        <div class="rotating-border">
+            <div class="rotating-border-inner">
+                <div class="rotating-border">
+                    <form>
+                        <p id="bmi-tag"></p>
+
+                        <p><label for="name"> Name: </label><input type="text" id="name" name = "name" placeholder="Enter your name" required></p>
+
+                        <p><label for = "age"> Age: </label><input type="number" id="age" placeholder="Enter your age" min="1" required></p>
+
+                        <p><label for="gender"> Gender: </label>
+                            <select id= "gender" required>
+                                <option value="none">None</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </p>
+
+                        <p><label for="Height">Height in cm: </label> <input type="number" id="height" height="Height" step="any" min = "1" placeholder="Height in cm" required></p>
+
+                        <p><label for="weight">Weight in KG: </label><input type="number" id="weight" weight="weight" step = "any" min ="1" placeholder="Weight in KG" required></p>
+                        <br>
+
+                        <button type="submit" class="calculate-btn">Calculate</button>
+                     
+                        <div id="result"></div>
+
+                    
+                <div id="bmi-meter">
+                    <div id = "bmi-bar">
+                        <div id = "bmi-fill"></div>
+                    </div>
+                </div>
+                        <div id="weight-guide" class="hidden">
+                        <h3>BMI Weight Guide</h3>
+                        <p>Under weight = Less than 18.6 <br> <small>Consider eating nutrient-rich food.</small></p>
+                        <p>Nomal weight = 18.6 and 24.9<br><small>Maintain your healthy lifestyle.</small></p>
+                         <p>Overweight = Greater than 24.9<br> <small>Try balancd diet and regular exercise.</small></p>
+                </div>
+                
+                <div class="button-wrapper">
+                    <button type="reset">Reset</button>
+                </div>
+
+                        </form>
+        </div>
+            </div>
+            </div>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
